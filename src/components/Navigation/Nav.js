@@ -7,7 +7,7 @@ import "./Nav.scss"
 const Nav = () => (
  <nav>
    <div className="container">
-     <div className="flex">
+     <div className="flex align-start">
        <div>
           <img src={logo} alt="logo"/>
        </div>

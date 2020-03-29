@@ -35,7 +35,7 @@ const Header = () => {
           </button>
           </div>
           <div>
-      <Img fixed={imageHeader.childImageSharp.fixed} alt="" />
+      <Img fixed={imageHeader.childImageSharp.fixed} alt="" className="ivan" />
       </div>
       </div>
      
