@@ -1,0 +1,25 @@
+
+$primary-color: red;
+$primary-patternpink:#ee2655;
+$dark-pink: #9c1938;
+
+nav {
+  ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+  }
+   li {
+    margin-left: 25px;
+   }
+    a {
+      color: $primary-patternpink;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    .btn-reverse {
+      border-color: $primary-patternpink;
+      color: $primary-patternpink;
+    }
+}

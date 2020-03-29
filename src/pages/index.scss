@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+$font-stack: Raleway;
+$dark-pink: #666  ;
+$color-white: #f1f1f1;
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  color: $dark-pink;
+  margin: 0;
+  font:100%  $font-stack;
+
+}
+
+.btn {
+  cursor: pointer;
+  outline: none;
+  color:$color-white;
+  background-color: transparent;
+  letter-spacing: 2px;
+  border: 2px solid $color-white;
+  padding: 15px 25px;
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1200px;
+}
+
+ .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+   div {
+     flex: 1;
+   }
+ }
