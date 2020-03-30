@@ -36,26 +36,25 @@ header {
     margin-bottom: -150px;
   }
 }
-
- h1 {
-font-size: 4rem;
-letter-spacing: 2px;
-line-height: 1;
-position: relative;
-margin: 0;
-padding-top: 50px;
-
-&:before {
+.line-top:before {
   content: '';
   background-color: $color-white;
-  top: 0;
-  left: 0;
   position: absolute;
-  height: 2px;
+  top: 0;
+  left:0;
+  height: 1px;
   width: 150px;
 
-  }
+}
+.has-pink:before {
 
- }
+}
 
- 
+ h1, h2 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  line-height: 1;
+  position: relative;
+  margin: 0;
+  padding-top: 50px;
+}

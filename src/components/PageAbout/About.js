@@ -2,12 +2,14 @@ import React from 'react'
 import {  useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import './About.scss'
+
 const About = () => {
   
   const {iconsImage} =  useStaticQuery(
     graphql`
       query {
-        iconsImage: file(relativePath: { eq: "gatsby-icon.png"}) {
+        iconsImage: file(relativePath: { eq: "logop.png"}) {
           childImageSharp {
             fixed(width:86, height:86) {
               ...GatsbyImageSharpFixed
@@ -19,24 +21,24 @@ const About = () => {
   )
   
   return (
-    <section className="container">
-      <h2>Mulhres de peito</h2>
+    <section id="about" className="container">
+      <h2 className="has-line-top">Mulhres de peito</h2>
       <div className="flex">
-        <div>
+        <div className="mb-2">
         <Img fixed={iconsImage.childImageSharp.fixed} alt="" />
-          <h4>Mulheres</h4>
+          <h3>Mulheres</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
              Voluptatibus iusto expedita id ex eligendi numquam commodi.</p>
         </div>
-        <div>
+        <div  className="mb-2">
         <Img fixed={iconsImage.childImageSharp.fixed} alt="" />
-          <h4>Mulheres</h4>
+          <h3>Mulheres</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
              Voluptatibus iusto expedita id ex eligendi numquam commodi.</p>
         </div>
-        <div>
+        <div className="mb-2">
         <Img fixed={iconsImage.childImageSharp.fixed} alt="" />
-          <h4>Mulheres</h4>
+          <h3>Mulheres</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
              Voluptatibus iusto expedita id ex eligendi numquam commodi.</p>
         </div>

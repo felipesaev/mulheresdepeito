@@ -1,18 +1,37 @@
 import React from "react"
-import logo from '../../images/logo.svg'
-
+import {  useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+import {Link} from 'gatsby'
 import "./Nav.scss"
 
 
-const Nav = () => (
+const Nav = () => {
+
+  const { logoImage } = useStaticQuery(
+    graphql`
+      query {
+        logoImage: file(relativePath: { eq: "logop.png" }) {
+          childImageSharp {
+            fixed(width: 60, height: 60) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
+    `
+  )
+  return (
  <nav>
    <div className="container">
      <div className="flex align-start">
        <div>
-          <img src={logo} alt="logo"/>
+         <Link to="#">
+         <Img  fixed={logoImage.childImageSharp.fixed} alt=""/>
+         </Link>
+       
        </div>
        <ul>
-         <li><a href="">Inicio</a></li>
+         <li><a href="#about">Inicio</a></li>
          <li><a href="">Sobre</a></li>
          <li><a href="">Blog</a></li>
          <li><a href="">Contato</a></li>
@@ -21,6 +40,6 @@ const Nav = () => (
      </div>
    </div>
  </nav>
-)
+  )}
 
 export default Nav

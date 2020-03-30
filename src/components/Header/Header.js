@@ -9,9 +9,9 @@ const Header = () => {
   const {imageHeader} =  useStaticQuery(
     graphql`
       query {
-        imageHeader: file(relativePath: { eq: "desktop.jpg"}) {
+        imageHeader: file(relativePath: { eq: "mulheres.jpg"}) {
           childImageSharp {
-            fixed(width:540, height:650) {
+            fixed(width:600, height:650) {
               ...GatsbyImageSharpFixed
             }
           }
@@ -23,9 +23,9 @@ const Header = () => {
   return (
   <header>
     <div className="container">
-      <div className="flex">
+      <div className="flex align-start">
         <div>
-        <h1>Mulheres de Peito</h1>
+        <h1 className="line-top">Mulheres de Peito</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates 
           rerum id atque fugiat doloribus esse libero deleniti, voluptas 
           possimus eveniet laborum. Dicta, iste? Iure esse voluptas dolorum 

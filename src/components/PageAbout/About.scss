@@ -1,0 +1,21 @@
+$primary-color: red;
+$primary-patternpink:#ee2655;
+$dark-pink: #9c1938;
+
+.has-line-top:before {
+  content: '';
+  background-color: $primary-patternpink;
+  position: absolute;
+  top: 0;
+  left:0;
+  height: 1px;
+  width: 150px;
+}
+
+ h3 {
+   font-size: 2rem;
+ }
+
+ .mb-2 {
+   margin-top: 80px;
+ }
