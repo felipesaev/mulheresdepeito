@@ -1,0 +1,43 @@
+$primary-patternpink-ligth:#eedde1;
+$primary-patternpink:#ee2655;
+$color-white: #f1f1f1;
+
+
+footer {
+  background-color: $primary-patternpink-ligth;
+  margin-top:180px;
+  position: relative;
+  background-image: url('../../images/bg-pattern-footer-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 60px 0 30px;
+
+    
+
+  h4 {
+    color: $color-white;
+	  text-transform: uppercase;
+  }
+   ul {
+    padding: 0;
+    list-style-type: none;
+   }
+   li {
+     margin-bottom: 10px;
+
+      a {
+        color: $color-white;
+	      text-transform: uppercase;
+	      text-decoration: none;
+      }
+   }
+
+   ul.flex li:not(:first-child) {
+    margin-left: 15px;
+  }
+
+  .border-bottom {
+    border-bottom: 1px solid $color-white;
+	  margin-bottom: 30px;
+  }
+}

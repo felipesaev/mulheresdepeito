@@ -5,6 +5,7 @@ $dark-pink: #666  ;
 $color-white: #f1f1f1;
 
 
+
 * {
   box-sizing: border-box;
 }
@@ -36,7 +37,130 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-   > div {
-     flex: 1;
-   }
- }
+  > div {
+    justify-content: space-around;
+  }
+}
+
+// reposividade 
+
+@media screen and (max-width: 768px) {
+	body {
+		text-align: center;
+	}
+
+	.flex {
+		flex-direction: column;
+	}
+
+	nav {
+		padding: 20px 0;
+	}
+
+	nav .hamburger {
+		background-color: transparent;
+		border: 0;
+		cursor: pointer;
+		display: flex;
+	}
+
+	nav .hamburger .close {
+		display: none;
+	}
+
+	nav .hamburger.show .open {
+		display: none;
+	}
+
+	nav .hamburger.show .close {
+		display: block;
+	}
+
+	nav .flex {
+		flex-direction: row;
+	}
+
+	nav .img-wrapper {
+		text-align: left;
+	}
+
+	nav ul {
+		display: none;
+	}
+
+	nav ul.show {
+		background-color: $dark-pink;
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		padding-top: 30px;
+		margin: 0;
+		top: 70px;
+		left: 0;
+		width: 100vw;
+		height: calc(100vh - 70px);
+		z-index: 100;
+	}
+
+	nav ul li {
+		margin: 20px 0;
+	}
+
+	nav ul a {
+		color: #fff;
+	}
+
+	.btn-reverse {
+		border-color: #fff;
+		color: #fff;
+	}
+
+	header {
+		padding-top: 0;
+		margin-bottom: 50px;
+	}
+
+	header::before,
+	header::after {
+		display: none;
+	}
+
+	.ivan {
+		display: inline-block;
+		margin-left: -20px;
+		margin-bottom: -10px;
+		max-width: calc(100% + 40px);
+	}
+
+	.line-top::before {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.reverse-mobile {
+		flex-direction: column-reverse;
+	}
+
+	.bg-violet {
+		background-image: url('../images/bg-pattern-how-we-work-mobile.svg');
+	}
+
+	.bg-violet h2 {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	footer {
+		background-image: url('../images/bg-pattern-footer-mobile.svg');
+		background-size: 100% auto;
+		background-position: top center;
+	}
+
+	footer ul.flex {
+		flex-direction: row;
+	}
+
+	footer .flex div {
+		width: 100%;
+	}
+}
