@@ -54,15 +54,18 @@ body {
 	}
 
 	nav {
-		padding: 20px 0;
-	}
+		
+		.hamburger {
+			background-color: transparent;
+			border: 0;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			
+	
+		}
+}
 
-	nav .hamburger {
-		background-color: transparent;
-		border: 0;
-		cursor: pointer;
-		display: flex;
-	}
 
 	nav .hamburger .close {
 		display: none;

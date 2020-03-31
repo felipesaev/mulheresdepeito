@@ -59,17 +59,17 @@ const Nav = () => {
  <nav>
    <div className="container">
      <div className="flex align-start">
-       <div>
+       
          <Link to="#">
-         <Img  fixed={logoImage.childImageSharp.fixed} alt=""/>
+            <Img  fixed={logoImage.childImageSharp.fixed} alt=""/>
          </Link>
-
+     
          <button className="hamburger" onClick={handleClick}  id="hamburger">
 						<img className="open" onClick={handleClickMenu}  src={iconHamburger} alt="icon-hamburger"/>
 						<img className="close" onClick={handleClickMenu} src={close} alt="icon-close" />
           </button>
        
-       </div>
+       
        <ul id="menu" >
          <li><a href="#about">Inicio</a></li>
          <li><a href="">Sobre</a></li>
