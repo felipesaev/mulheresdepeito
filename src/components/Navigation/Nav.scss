@@ -4,11 +4,27 @@ $primary-patternpink:#ee2655;
 $dark-pink: #9c1938;
 
 nav {
+
+  .hamburger {
+    display: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  
   ul {
     display: flex;
     list-style-type: none;
     padding: 0;
   }
+
+  .hamburger {
+    display: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  
    li {
     margin-left: 25px;
    }

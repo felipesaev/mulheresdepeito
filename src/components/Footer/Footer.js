@@ -10,10 +10,6 @@ import instagram from '../../images/icon-instagram.svg'
 import twitter from '../../images/icon-twitter.svg'
 import youtube from '../../images/icon-pinterest.svg'
 
-
-
-import logo from '../../images/logo.svg'
-
 import './Footer.scss' 
 
 

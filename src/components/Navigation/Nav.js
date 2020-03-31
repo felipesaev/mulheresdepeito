@@ -10,6 +10,37 @@ import "./Nav.scss"
 
 const Nav = () => {
 
+  
+  
+
+  const handleClickMenu = () => {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('show');
+    console.log(menu);
+
+  }
+
+  const handleClick = () =>{
+    const hamburger = document.getElementById('hamburger');
+    hamburger.classList.toggle('show');
+     
+    console.log(hamburger);
+  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {showModal: false};
+  //   this.handleClick = this.handleClick.bind(this);
+  // }
+
+  //   const hamburger = document.getElementById('hamburger');
+//   const menu = document.getElementById('menu');
+
+//   hamburger.addEventListener('click', () => {
+// 	hamburger.classList.toggle('show');
+// 	menu.classList.toggle('show');
+// });
+
+
   const { logoImage } = useStaticQuery(
     graphql`
       query {
@@ -23,13 +54,7 @@ const Nav = () => {
       }
     `
   )
-//   const hamburger = document.getElementById('hamburger');
-//   const menu = document.getElementById('menu');
 
-//   hamburger.addEventListener('click', () => {
-// 	hamburger.classList.toggle('show');
-// 	menu.classList.toggle('show');
-// });
   return (
  <nav>
    <div className="container">
@@ -39,13 +64,13 @@ const Nav = () => {
          <Img  fixed={logoImage.childImageSharp.fixed} alt=""/>
          </Link>
 
-         <button class="hamburger" id="hamburger">
-						<img class="open"  src={iconHamburger} alt="icon-hamburger"/>
-						<img class="close" src={close} alt="icon-close" />
-					</button>
+         <button className="hamburger" onClick={handleClick}  id="hamburger">
+						<img className="open" onClick={handleClickMenu}  src={iconHamburger} alt="icon-hamburger"/>
+						<img className="close" onClick={handleClickMenu} src={close} alt="icon-close" />
+          </button>
        
        </div>
-       <ul id="menu">
+       <ul id="menu" >
          <li><a href="#about">Inicio</a></li>
          <li><a href="">Sobre</a></li>
          <li><a href="">Blog</a></li>
