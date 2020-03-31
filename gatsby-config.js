@@ -25,10 +25,10 @@ module.exports = {
         name: `mulheres`,
         short_name: `mulheres`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#ee2655`,
+        theme_color: `#ee2655`,
         display: `minimal-ui`,
-        icon: `src/images/mulheres.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/logomobile.jpg`, // This path is relative to the root of the site.
       },
     },
     
