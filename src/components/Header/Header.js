@@ -34,7 +34,7 @@ const Header = () => {
             Participe
           </button>
           </div>
-          <div >
+          <div className="ivan">
       <Img fixed={imageHeader.childImageSharp.fixed} alt="" className="ivan" />
       </div>
       </div>

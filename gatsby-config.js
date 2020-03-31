@@ -22,24 +22,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `mulheres`,
-        short_name: `mulheres`,
+        name: `Mulheres de Peito`,
+        short_name: `Mulheres de Peito`,
         start_url: `/`,
         background_color: `#ee2655`,
         theme_color: `#ee2655`,
         display: `minimal-ui`,
-        icons: [
-          {
-            src: `/favicons/logomobile.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/favicons/logomobile.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
-        ], // This path is relative to the root of the site.
+        icon: `src/images/mbapp.jpg`,
       },
     },
     
