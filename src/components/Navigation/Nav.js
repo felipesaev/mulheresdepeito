@@ -74,8 +74,7 @@ const Nav = () => {
          <li><a href="#about">Inicio</a></li>
          <li><a href="">Sobre</a></li>
          <li><a href="">Blog</a></li>
-         <li><a href="">Contato</a></li>
-         <li><a href="" className="btn btn-reverse">Faça Parte</a></li>
+         <li><Link to="/contato" className="btn btn-reverse">Faça Parte</Link></li>
        </ul>
      </div>
    </div>

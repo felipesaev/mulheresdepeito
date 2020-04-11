@@ -1,4 +1,6 @@
 import React from "react";
+import './index.scss'
+
 
 export default class Form extends React.Component {
   constructor(props) {
@@ -21,7 +23,7 @@ export default class Form extends React.Component {
         <input type="email" name="email" />
         <label>Mensagem:</label>
         <input type="text" name="message" />
-        {status === "SUCCESS" ? <p>Obrigado!</p> : <button>Enviar</button>}
+        {status === "SUCCESS" ? <p>Ficamos felizes em saber disso!</p> : <button>Enviar</button>}
         {status === "ERROR" && <p>Ops, algo deu errado ! Tente novamente.</p>}
       </form>
     );

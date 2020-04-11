@@ -4,7 +4,7 @@ $color-white: #f1f1f1;
 
 
 footer {
-  background-color: $primary-patternpink-ligth;
+  background-color: $primary-patternpink;
   margin-top:180px;
   position: relative;
   background-image: url('../../images/bg-pattern-footer-desktop.svg');
@@ -12,7 +12,9 @@ footer {
   background-position: top left;
   padding: 60px 0 30px;
 
-    
+    h3 {
+      color: $color-white;
+    }
 
   h4 {
     color: $color-white;
@@ -24,7 +26,7 @@ footer {
    }
    li {
      margin-bottom: 10px;
-
+     color: $color-white; 
       a {
         color: $color-white;
 	      text-transform: uppercase;
@@ -34,6 +36,9 @@ footer {
 
    ul.flex li:not(:first-child) {
     margin-left: 15px;
+  }
+  .flex li {
+    color: $color-white;
   }
 
   .border-bottom {

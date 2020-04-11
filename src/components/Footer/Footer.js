@@ -50,16 +50,15 @@ const Footer = () => {
             <div>
               <h3>Mulheres</h3>
               <ul>
-                <li><a href="">sobre</a></li>
-                <li><a href="">sobre</a></li>
-                <li><a href="">sobre</a></li>
-                <li><a href="">sobre</a></li>
+                <li><a href="/">home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contato">Participe</a></li>
               </ul>
          
 
         </div>
         <div>
-          <h3>Ajude-me</h3>
+          <h3>Ajude-nos</h3>
           <ul>
               <li><a href="">FAQ</a></li>
               <li><a href="">Termos de uso</a></li>
@@ -71,8 +70,8 @@ const Footer = () => {
         <div>
           <h3>Contato</h3>
           <ul>
-            <li><a href="">Suporte</a></li>
-            <li><a href="">WhatsApp</a></li>
+            <li><a href="/contato">Participe</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=5512982885224&text=Fale%20conosco">WhatsApp</a></li>
           </ul>
         </div>
       </div>

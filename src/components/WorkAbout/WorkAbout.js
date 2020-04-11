@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from "gatsby"
+
 
 import './WorkAbout.scss'
 
@@ -9,7 +11,9 @@ const WorkAbout = () => {
         <div>
         <h2 className="has-line-top">Descubra mais como ajudar</h2>
         </div>
-         <button className="btn">Participe</button>
+        <Link to="/contato">
+         <button className="btn" >Participe</button>
+         </Link>
          </div>
     </section>
   )
