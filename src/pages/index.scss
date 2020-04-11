@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 $font-stack: Raleway;
-$dark-pink: #666  ;
+$dark-pink: #ee2655  ;
 $color-white: #f1f1f1;
 
 
@@ -69,14 +69,19 @@ body {
 
 	nav .hamburger .close {
 		display: none;
+		outline: none;
 	}
 
 	nav .hamburger.show .open {
 		display: none;
+		outline: none;
+
 	}
 
 	nav .hamburger.show .close {
 		display: block;
+		outline: none;
+
 	}
 
 	nav .flex {
