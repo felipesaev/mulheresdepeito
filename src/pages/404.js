@@ -3,7 +3,7 @@ import React from "react"
 
 const NotFoundPage = () => (
   <>
-  <h1>ERRO</h1>
+  <h1>Ops, algo deu errado, tente novamente.</h1>
   </>
   )
 

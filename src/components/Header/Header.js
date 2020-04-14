@@ -26,10 +26,11 @@ const Header = () => {
       <div className="flex align-start">
         <div>
         <h1 className="line-top">Mulheres de Peito</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates 
-          rerum id atque fugiat doloribus esse libero deleniti, voluptas 
-          possimus eveniet laborum. Dicta, iste? Iure esse voluptas dolorum 
-          cumque! Praesentium, voluptates.</p>
+        <p>O projeto "Mulheres de peito" surgiu após minha grande amiga Aline 
+          Bertholdo Tavolaro ser diagnosticada com cancer de mama, 
+          o momento do encontro com as amigas , a maquiagem e sorrisos, 
+          foram fundamentais para trazer alegria e ainda ajuda-la no tratamento
+          , hoje ela brilha no céu.</p>
           <button className="btn">
             Participe
           </button>
