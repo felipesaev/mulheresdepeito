@@ -175,3 +175,37 @@ body {
 		width: 100%;
 	}
 }
+
+// form styled 
+.contato {
+	background-color: $dark-pink;
+	color: $color-white;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	height: 600px;
+	line-height: 33px;
+}
+
+input {
+	width:200px ;
+	border: .1px solid #666;
+	box-shadow: 1px 2px 4px #616161;
+	border-radius: 8px;
+	margin: 0 auto;
+	line-height: 20px;
+}
+.inputMessage {
+	height: 80px;
+	width: 200px;
+}
+
+.btnContato {
+	background-color: #000;
+	color: $color-white;
+	margin: 9px auto;
+	border-radius: 8px;
+	width:100px;
+	height: 28px;
+}

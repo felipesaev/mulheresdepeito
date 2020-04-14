@@ -14,18 +14,21 @@ export default class Form extends React.Component {
   render() {
     const { status } = this.state;
     return (
+      <section>
       <form
         onSubmit={this.submitForm}
         action="https://formspree.io/mzbajgan"
         method="POST"
+        className="form"
       >
         <label>Seu Email:</label>
         <input type="email" name="email" />
         <label>Mensagem:</label>
-        <input type="text" name="message" />
-        {status === "SUCCESS" ? <p>Ficamos felizes em saber disso!</p> : <button>Enviar</button>}
-        {status === "ERROR" && <p>Ops, algo deu errado ! Tente novamente.</p>}
+        <input className="inputMessage" type="text" name="message" />
+        {status === "SUCCESS" ? <p>Logo entraremos em contato!<br/> <a href="/"> Voltar ao inicio</a></p> : <button className="btn">Enviar</button>}
+        {status === "ERROR" && <p>Ops, algo deu errado, Tente novamente.</p>}
       </form>
+      </section>
     );
   }
 
