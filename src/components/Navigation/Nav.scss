@@ -30,5 +30,8 @@ nav {
     .btn-reverse {
       border-color: $primary-patternpink;
       color: $primary-patternpink;
+       @media (max-width: 768px) {
+         color: #fff;
+       }
     }
 }
