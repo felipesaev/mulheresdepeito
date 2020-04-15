@@ -22,7 +22,7 @@ const About = () => {
   
   return (
     <section id="about" className="container">
-      <h2 className="has-line-top">Mulhres de peito</h2>
+      <h2 className="has-line-top">Mulheres de peito</h2>
       <div className="flex">
         <div className="mb-2">
         <Img fixed={iconsImage.childImageSharp.fixed} alt="" />
