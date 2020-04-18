@@ -11,7 +11,7 @@ const WorkAbout = () => {
         <div>
         <h2 className="has-line-top">Descubra mais como ajudar</h2>
         </div>
-        <Link to="/contato">
+        <Link to="/">
          <button className="btn" >Participe</button>
          </Link>
          </div>
